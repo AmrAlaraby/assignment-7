@@ -1,0 +1,490 @@
+
+
+body, html {
+   
+        background-color: #f5f5f5;
+        color: #4e4e4e;
+    
+
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.navbar {
+    background-color: #000;
+}
+
+.header {
+    height: 100vh;
+    background: url('./assets/hero-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+.overlay-itro {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+h2.typewriter {
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+}
+
+.typewriter::before {
+    content: "";
+    animation: typing 10s infinite;
+}
+
+@keyframes typing {
+    /* Developer */
+    0%, 28.3% { content: ""; }
+    1.35%, 26.95% { content: "D"; }
+    2.7%, 25.6% { content: "De"; }
+    4.05%, 24.25% { content: "Dev"; }
+    5.4%, 22.9% { content: "Deve"; }
+    6.75%, 21.55% { content: "Devel"; }
+    8.1%, 20.2% { content: "Develo"; }
+    9.45%, 18.85% { content: "Develop"; }
+    10.4%, 17.5% { content: "Develope"; }
+    12.15%, 16.25% { content: "Developer"; }
+
+    /* Designer */
+    32.3%, 57.5% { content: ""; }
+    33.65%, 56.2% { content: "D"; }
+    35%, 54.9% { content: "De"; }
+    36.35%, 53.6% { content: "Des"; }
+    37.7%, 52.3% { content: "Desi"; }
+    39.05%, 51% { content: "Desig"; }
+    40.4%, 49.7% { content: "Design"; }
+    41.75%, 48.4% { content: "Designe"; }
+    43.1%, 47.1% { content: "Designer"; }
+
+    /* Freelancer */
+    61.5%, 87.2% { content: ""; }
+    62.7%, 86% { content: "F"; }
+    63.9%, 84.8% { content: "Fr"; }
+    65.2%, 83.6% { content: "Fre"; }
+    66.4%, 82.4% { content: "Free"; }
+    67.6%, 81.2% { content: "Freel"; }
+    68.8%, 80% { content: "Freela"; }
+    70%, 78.8% { content: "Freelan"; }
+    71.2%, 77.6% { content: "Freelance"; }
+    72.4%, 76.4% { content: "Freelancer"; }
+
+    /* Photographer */
+    90%, 98% { content: ""; }
+    90.3%, 97.7% { content: "P"; }
+    90.6%, 97.3% { content: "Ph"; }
+    90.9%, 97.1% { content: "Pho"; }
+    91.2%, 96.8% { content: "Phot"; }
+    91.5%, 96.5% { content: "Photo"; }
+    91.8%, 96.2% { content: "Photog"; }
+    92.1%, 95.9% { content: "Photogr"; }
+    92.3%, 95.6% { content: "Photogra"; }
+    92.7%, 95.3% { content: "Photograp"; }
+    93%, 95% { content: "Photographer"; }
+}
+
+
+
+
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 32px;
+    color: white;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+.nav-link{
+    position: relative;
+}
+.nav-link:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 2px;
+    left: 0.5rem;
+    width: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover:before, .active:before {
+    visibility: visible;
+    width: 80%;
+}
+/* ///////////////////////////////////////////// */
+
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 8px;
+}
+
+.progress {
+    height: 8px;
+}
+
+h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+hr {
+    border-top: 3px solid #007bff;
+    width: 15%;
+    margin-top: -10px;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+/* ////////////////////// */
+.title-a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.subtitle-a {
+    text-decoration: none;
+    color: #4e4e4e;
+}
+.line-mf {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+.service-box {
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.service-box .service-ico {
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+}
+.service-box .ico-circle {
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-box .service-ico {
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+}
+.ico-circle {
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    display: block;
+}
+
+.service-box:hover.service-box .ico-circle{
+    
+        background-color: #0078ff;
+        box-shadow: 0 0 0 10px #0077ff3e;
+        color: #fff;
+    
+}
+.service-box .s-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.4rem 0;
+}
+.service-box .s-description {
+    color: #4e4e4e;
+}
+/* ///////////////////////// */
+.paralax-mf {
+    position: relative;
+    padding: 8rem 0;
+    background: url('./assets/Screenshot\ 2024-10-28\ 141616.png') no-repeat center center fixed;
+}
+
+.overlay-mf {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: #0078ff;
+}
+.counter-box {
+    color: #fff;
+    text-align: center;
+}
+.counter-ico {
+    margin-bottom: 1rem;
+}
+.counter-ico .ico-circle {
+    height: 60px;
+    width: 60px;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #cde1f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.work-box {
+    margin-bottom: 3rem;
+    backface-visibility: hidden;
+    background-color: #fff;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+a {
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.work-img {
+    display: block;
+    overflow: hidden;
+}
+.work-img img {
+    transition: all 1s;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.work-box:hover .img-fluid{
+    transform: scale(1.2);
+}
+.work-content {
+    padding: 2rem 3% 1rem 4%;
+}
+.w-title {
+    font-size: 1.2rem;
+}
+.work-content .w-more {
+    color: #4e4e4e;
+    font-size: 0.8rem;
+}
+.work-content .w-more .w-ctegory {
+    color: #0078ff;
+}
+.work-content .w-like {
+    font-size: 2.5rem;
+    color: #0078ff;
+    float: right;
+}
+.work-content .w-like a {
+    color: #0078ff;
+}
+.title-box {
+    margin-bottom: 4rem;
+}
+/* ///////////////////////////////// */
+
+
+/* Testimonial Section Styling */
+.testimonial-section {
+    background: url('./assets/overlay-bg.jpg') no-repeat center center / cover;
+    padding: 100px 0;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+/* Testimonial Image Styling */
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Testimonial Name Styling */
+.testimonial-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Testimonial Text Styling */
+.testimonial-text {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Carousel Indicators Styling */
+.carousel-indicators [data-bs-target] {
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+   
+}
+.carousel-indicators{
+     transform: translateY(100%);
+}
+
+
+/* Carousel Caption Styling */
+.carousel-caption {
+    position: static;
+    padding-top: 20px;
+}
+
+/* ////////////////////// */
+.card-blog .card-body {
+    position: relative;
+}
+.card-blog .card-category-box {
+    position: absolute;
+    text-align: center;
+    top: -16px;
+    left: 15px;
+    right: 15px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.card-blog .card-category {
+    display: inline-block;
+    color: #fff;
+    padding: 0 15px 5px;
+    overflow: hidden;
+    background-color: #0078ff;
+    border-radius: 4px;
+}
+.card-blog .card-category .category {
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1px;
+    margin-bottom: 0;
+}
+.card-blog .card-title {
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+}
+a:hover {
+    color: #0078ff;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.card-blog .card-description {
+    color: #4e4e4e;
+}
+.card-blog .post-author {
+    display: inline-block;
+}
+.avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    overflow: hidden;
+}
+.card-blog .post-date {
+    color: #4e4e4e;
+}
+/* /////////////////////// */
+.contact{
+    background: url('./assets/overlay-bg.jpg') no-repeat center center fixed;
+    position: relative;
+}
+.contact-card{
+    background: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+    z-index: 2;
+    position: relative;
+    -webkit-box-shadow: 4px 4px 15px 0px rgba(210,199,255,1);
+    -moz-box-shadow: 4px 4px 15px 0px rgba(210,199,255,1);
+    box-shadow: 4px 4px 15px 0px rgba(210,199,255,1);
+
+}
+
+.my-title {
+    font-size: 2rem;
+    position: relative;
+}
+.my-title:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+
+.list-ico, .socials ul {
+    list-style: none;
+}
+
+.socials .ico-circle {
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    line-height: 1.6;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 3px #0078ff;
+    transition: all 500ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease;
+}
+.socials .ico-circle:hover {
+    background-color: #0078ff;
+    color: #fff;
+    box-shadow: 0 0 0 3px #cde1f8;
+
+}
+/* /////////////////// */
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 25px 0;
+    background: #0062d3;
+}
+footer .credits a {
+    color: #fff;
+}
