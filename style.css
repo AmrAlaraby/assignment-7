@@ -322,7 +322,7 @@ a {
 
 /* Testimonial Section Styling */
 .testimonial-section {
-    background: url('./assets/overlay-bg.jpg') no-repeat center center / cover;
+    background: url('./assets/overlay-bg.jpg') no-repeat center center fixed;
     padding: 100px 0;
     color: #ffffff;
     text-align: center;
